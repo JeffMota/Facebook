@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(246, 249, 250);
+}
+
+a{
+    color: rgb(0, 124, 226);
+}
+
+h1{
+    color: rgb(0, 89, 255);
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.box_principal{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: auto;    
+    min-height: 35rem;
+}
+
+.box_logo{
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    height: 20rem;
+    align-items: start;
+    justify-content: center;
+    font-size: 27px;
+    float: left;
+    color: rgb(36, 36, 36);
+}
+
+input{
+    height: 45px;
+    margin: 8px 0;
+    border: solid 1px rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 300px;
+    text-align:start;
+    padding: 0 20px;
+}
+
+.box_2{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: solid 10px rgb(255, 255, 255); 
+    border-radius: 11px;
+    flex-direction: column;
+    height: 21rem;
+    text-align: center;
+    width: 23rem;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    box-shadow: 0px 0px 10px  rgb(230, 235, 236);
+}
+
+.botao_entrar{
+    width: 350px;
+    height: 45px;
+    font-size: 20px;
+    color: white;
+    margin: 10px 0 20px 0;
+    background-color: rgb(0, 124, 226);
+    border: solid 1px rgb(0, 124, 226);
+    border-radius: 5px;
+}
+.botao_entrar:hover{
+    background-color: rgb(0, 89, 255);
+    cursor: pointer;
+}
+
+.botao_criar{
+    width: 150px;
+    height: 45px;
+    margin: 40px;
+    margin-top: 50px;
+    border: solid 1px rgb(27, 177, 27);
+    border-radius: 5px;
+    background-color: rgb(27, 177, 27);
+    color: white;
+    font-size: 15px;
+}
+
+.botao_criar:hover{
+    background-color: rgb(0, 139, 0);
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    .box_principal{
+        flex-direction: column;
+        max-width: 425px;
+    }
+    .box_logo{
+        max-width: 90%;
+        font-size: 1.5rem;
+        height: 200px;
+    }
+    .box_2{
+        max-width: 90%;
+        margin: 20px 0;
+        height: 18rem;
+    }
+    .botao_criar{
+        margin:15px 40px;
+    }
+    input{
+        max-width: 300px;
+        font-size: 1rem;
+    }
+}
